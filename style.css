@@ -1,0 +1,306 @@
+/* ---------------------------------------------------------------- Generale - globale -----------------------------------------------------------------------------------------*/
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Nunito";
+        
+}
+
+li {
+        list-style-type: none;
+
+}
+
+a {
+        text-decoration: none;
+        color:black;
+}
+
+/* ---------------------------------------------------------------------- NAVBAR ------------------------------------------------------------------------------------------*/
+.logo{
+        width: 5vw;
+}
+
+nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1vw 10vw  1vw 5vw;
+        background-image: linear-gradient(to right,gold,#ff7b00,#1500d6);
+        
+}
+
+
+nav li{
+        text-decoration: none;
+        display: inline-block;
+        font-weight: 900;        
+}
+
+
+nav li a {
+
+        padding: 0.5vw;
+        text-decoration: none;
+        margin-left: 2vw;
+        color: white;
+        font-size: larger;
+        border-radius: 3rem;
+
+}
+
+a.active{
+
+        background-color: gold;
+
+}
+
+
+nav li a:hover{
+        
+        background-image: linear-gradient(rgba(255, 217, 0, 0.555));
+        
+}
+
+
+ /* ------------------------------------------------------------------- Header ---------------------------------------------------------------------*/
+
+ header{
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(rgba(104, 136, 145, 0.466)), url(./media/travlbackground.jpg) ;
+        background-size: cover;
+ }
+
+ h1{
+        font-family: "Sono", monospace;
+        padding: 2rem;
+        border-radius: 3rem;
+        font-size: 13rem;
+        /*background-image: linear-gradient(rgba(255, 255, 255, 0.5));
+        margin-left: 44rem;*/
+        color:rgb(0, 0, 192);
+ }
+
+h1 span{
+        font-family: "Sono", monospace;
+        color:gold;
+}
+
+ /*------------------------------------------------------------- Section --------------------------------------------------------*/
+
+ .sec_viaggi_consigliati, .chi_siamo_section {
+        display:flex;
+        justify-content: space-evenly;
+        background-image: linear-gradient(rgb(0, 0, 192)80%,rgb(218, 246,255));
+        padding: 5rem 0px;
+        
+ }
+
+ .chi_siamo_section{
+        padding: 0px;
+        height: 100vh;       
+ }
+
+
+ /* ------------------------------------------------------------------------- ARTICLE -------------------------------------------------*/
+ .art_meta_suggerita, .fondatore{
+        display: flex;
+        padding: 1%;
+        width: 21vw;
+        border: 2px solid black;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5rem;
+        margin:2rem;
+        background-color: ghostwhite;
+ }
+
+ .fondatore{
+
+         padding: 3rem;
+         height: 80vh;
+ }
+
+
+
+ /* --------------------------------------------------------------------- IMMAGINI --------------------------------------------------------- */
+.art_meta_suggerita img, .fondatore img{
+
+        max-height: 100%;
+        
+ }
+
+.img_container{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        aspect-ratio: 1/1;
+        border:1rem solid gold;
+        border-radius: 100rem;
+        object-fit: contain;
+        overflow: hidden;
+
+}
+
+/* -------------------------------------------------------------------------- LINK ------------------------------------------------------------- */
+.art_meta_suggerita li {
+
+        list-style-type: circle;
+        margin: 1vh 0px;
+ }
+
+.titolo_meta_sugg{
+
+        font-family: "Madimi One", sans-serif;
+        font-size: 3rem;
+        margin: 10%;
+}
+
+/*link della card alberghi auggeriti*/
+
+.link_suggeriti{
+        width:100%;
+        padding: 5%;
+
+}
+
+.link_suggeriti ol{
+        padding-left: 10%;
+        padding-top: 5%;
+}
+
+.Titolo_link_alberghi_suggeriti {
+        font-size: 1.5rem;
+}
+
+.link_suggeriti a{
+        font-size: 1.2rem;
+        border-radius: 3rem;
+        padding: 0.2rem 0.6rem;
+
+        margin: 0.4rem;
+}
+
+.link_suggeriti a:hover{
+
+        background-color: rgb(192, 255, 192);
+}
+
+
+/* ------------------------------------------------------------------------ CHI SIAMO --------------------------------------------------------- */
+
+.nome_fondatore{
+
+        font-family: "Madimi One", sans-serif;
+        font-size: 3rem;
+        margin:  10% 0px;
+}
+
+.ruolo{
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+}
+
+.ruolo p{
+
+        font-size: 1.5rem;
+}
+
+
+
+
+
+
+/* --------------------------------------------------------------------- FOOTER -----------------------------------------------------------------*/
+footer{
+        
+        padding: 3rem 8rem;
+        background-color: rgb(218, 246, 255);
+
+}
+
+.title_contatti{
+
+        font-size: 2rem;
+        padding-bottom: 3vh;
+
+}
+
+.contatti_lista {
+
+        display: flex;
+        justify-content: space-between;
+        font-size: 1rem;
+}        
+
+span {
+        font-weight: bold;
+}
+
+/* ---------------------------------------------------------------------- FORM --------------------------------------------------------------------- */
+
+
+
+.register_section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+}
+
+
+
+form{
+
+        display: flex;
+        justify-content: center;
+        width:70vw;
+        padding: 3%;
+        margin: 10rem;
+        border-radius: 4rem;
+        background-color: rgba(255, 217, 0, 0.418);
+
+
+}
+
+.titolo_form{
+        font-family: "Madimi One", sans-serif;
+        font-size: 4rem;
+        margin: 5%;
+}
+
+
+.label_form, .input{
+        display: flex;
+        flex-direction: column;
+
+}
+
+.input{
+        width:50%;
+}
+.label_form{
+        width: 20%;
+
+}
+
+input{
+        margin: 1rem ;
+        padding:0.7rem;
+        background-color: beige;
+        border-radius: 3rem;;
+        
+}
+
+label{
+        min-width: 10rem;
+        padding: 1rem;
+        font-size: 2rem;
+}
